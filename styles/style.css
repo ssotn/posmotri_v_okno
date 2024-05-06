@@ -147,7 +147,8 @@ ol {
 
 .content__list {
   position: relative;
-
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   height: 298px;
   max-width: 399px;
