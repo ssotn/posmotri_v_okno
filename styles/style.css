@@ -16,7 +16,21 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.visually-hidden {
+  position: absolute; /* элемент вырывают из потока */
+  width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+  height: 1px;
+  margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+  padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+  border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+  clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+  overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+} 
 
 h1,
 h2,
@@ -36,3 +50,187 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  flex-direction: row; /**?? figma styles**/
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px 30px 0px 30px;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-form__fieldset {
+
+}
+
+.search-form__fieldset-title {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+
+}
+
+.search-form__checkbox {
+
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button {
+
+} 
+
+.search-form__submit-button {
+
+}
+
+.content__details {
+
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.content__accent {
+  font-family: Oswald, sans-serif;
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+
+  display: flex;
+  height: 298px;
+  max-width: 399px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.preloader-template {
+
+}
+
+.preloader {
+
+}
+
+.preloader-chasing-squares {
+
+}
+
+.cards-list-item-template {
+
+}
+
+.content__list-item {
+
+}
+
+.content__card-link {
+
+}
+
+.content__video-card {
+
+}
+
+.content__video-card-description-container {
+
+}
+
+.content__video-card-title {
+
+}
+
+.content__video-card-description {
+
+}
+
+.content__video-card-thumbnail {
+
+}
+
+.more-button-template {
+
+}
+
+.button {
+
+}
+
+.more-button {
+  background-color: transparent;
+}
+
+.error-template {
+
+}
+
+.error {
+
+}
+
+.error__title {
+
+}
+
+
+
+
+
+
+
+
+
+
+
