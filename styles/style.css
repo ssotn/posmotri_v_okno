@@ -90,6 +90,9 @@ ol {
 
 .search-form__fieldset {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
 }
 
 .search-form__fieldset-title {
@@ -122,7 +125,32 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /*color: rgba(255, 255, 255, 0.7);*/
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 225px;
+  min-height: 27px;
+  border-left: none;
+  border-right: none;
+  background-color: initial;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
+  outline: 0;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
 }
 
 .search-form__checkbox-list {
@@ -142,19 +170,49 @@ ol {
   width: 19px;
   height: 19px;
   border: 1px solid #FFFFFF;
+  margin-right: 5px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background: white;
+  outline: 1px solid white;
+  border: 1px solid #1b1919;
+}
+
+.search-form__label:hover .search-form__label-text {
+  cursor: pointer;
+  text-decoration: underline;  
 }
 
 .button {
+  cursor: pointer;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;  
-  color: #FFFFFF;
-  cursor: pointer;
+  color: #FFFFFF;  
   background-color: transparent;
-} 
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+
+.button:active {
+  background: #545050;
+  border: 1px solid #FFFFFF;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
 
 .search-form__submit-button {
   min-width: 194px;
@@ -196,18 +254,6 @@ ol {
   align-items: flex-start;
   gap: 32px;
   list-style: none;
-}
-
-.preloader-template {
-
-}
-
-.preloader {
-
-}
-
-.preloader-chasing-squares {
-
 }
 
 .cards-list-item-template {
@@ -266,21 +312,8 @@ ol {
 .more-button {
   min-width: 399px;
   height: 34px;
-  gap: 10px; /**figma style??**/
-  border: 1px solid #FFFFFF;
 }
 
-.error-template {
-
-}
-
-.error {
-
-}
-
-.error__title {
-
-}
 
 
 
