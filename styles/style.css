@@ -154,7 +154,7 @@ ol {
 } 
 
 .search-form__submit-button {
-  width: 194px;
+  min-width: 194px;
   height: 34px;
 }
 
