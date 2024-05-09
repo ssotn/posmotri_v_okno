@@ -253,19 +253,11 @@ ol {
   overflow-x: hidden;
   display: flex;
   height: 298px;
-  max-width: 399px;
+  min-width: 399px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   list-style: none;
-}
-
-.cards-list-item-template {
-
-}
-
-.content__list-item {
-
 }
 
 .content__card-link {
