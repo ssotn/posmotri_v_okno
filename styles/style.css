@@ -258,6 +258,7 @@ ol {
   align-items: flex-start;
   gap: 32px;
   list-style: none;
+  scrollbar-width: none;
 }
 
 .content__card-link {
