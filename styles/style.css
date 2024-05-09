@@ -145,7 +145,6 @@ ol {
 }
 
 .search-form__textfield:active {
-  border: 1px solid #FFFFFF;
   outline: 0;
 }
 
