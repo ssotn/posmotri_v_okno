@@ -245,8 +245,7 @@ ol {
 
 .content__list {
   position: relative; /*выставили прелоадеры*/
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   display: flex;
   height: 298px;
   min-width: 399px;
