@@ -247,8 +247,8 @@ ol {
   position: relative; /*выставили прелоадеры*/
   overflow-y: auto;
   display: flex;
-  width: fit-content;
   height: 298px;
+  min-width: 399px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -286,6 +286,7 @@ ol {
 
 .content__video-card {
   display: grid;
+  padding: 2px 0px 2px 0px;
   grid-template-columns: 200px 1fr;
 }
 
@@ -316,13 +317,13 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  width: 188px;
   height: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
-  min-width: 399px;
+  min-width: 390px;
   height: 34px;
 }
